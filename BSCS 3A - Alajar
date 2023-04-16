@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+{
+	    Scanner input = new Scanner(System.in);
+	   
+	   System.out.print("Enter Student Name  :  ");
+	        String m = input.nextLine();
+	   System.out.print("Enter Student No.  :  ");
+	        String n = input.nextLine();
+	   System.out.print("Enter Year / Section  :  ");
+	        String o = input.nextLine();
+	   System.out.print("Enter Date  :  ");
+	        String p = input.nextLine();
+	   System.out.print("Enter Instractor  :  ");
+	        String q = input.nextLine();
+	        System.out.println("");
+	        
+	   
+	   System.out.print("Number of Lecture Subject:  ");
+	        int data1 = input.nextInt();
+	   System.out.print("Number of Laboratory Subject:  ");
+	        int data2 = input.nextInt();
+	   System.out.print("Price per Subject:  ");
+	        double data3 = input.nextDouble();
+	   System.out.println("");
+	    
+	            int data4 = (data1+data2);                                  // total no. subj.
+	            double data5 = (data2 * 300);                               // labo. fee
+	            double data6 = (data3*data4+data5);                         //Tuition
+	        System.out.println("Total number of Subjects:  " + data4);       //(number of Lecture subjects + number of laboratory subjects)
+	        System.out.println("Laboratory Fee:  " + data5);                 //(number of laboratory subjects * 300)
+	        System.out.println("Tuition Fee:  " + data6);                    //Fee: (Total number of subjects * price per subjects + Laboratory fee)
+	        System.out.println("");
+	   
+	   
+	                 int a = 500;
+	                 int b = 600;
+	                 int c = 400;
+	                    double num1 =  a + b + c;
+	                    double num2 = num1 + data6; 
+	            System.out.println("  Library Fee:  " + a);
+	            System.out.println("  Medical Fee:  " + b);
+	            System.out.println("  Dental Fee:  " + c);
+	            System.out.println("Miscellaneous Fee:  " + num1);	           
+	            System.out.println("");
+	   System.out.println("Student Name  :  "+ m);
+	   System.out.println("Student No.  :  "+ n);
+	   System.out.println("Year / Section  :  "+ o);
+	   System.out.println("Date  :  "+ p);
+	   System.out.println("Instractor  :  "+ q);
+	          
+	     System.out.println("Total Fees:  " + num2);
+	            
+}
+}
